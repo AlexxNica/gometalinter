@@ -14,14 +14,8 @@ deploy:
   provider: releases
   api_key:
     secure: OBLrJXJvOLI0PPM15Jo0IEcJYl4CpQTBVXT4pjTeEFzukHdEmfQU0BmPoIsDsaqtbJLf+oQT4NfefQFEqFQqJidHKAxUFMttIlfv7LfIkVZVOFg/tDwqOg/VVFmWFOR696RwjlbOTKzGqFbEwmFnYgMwOXMlFl1en+R+40PEuos=
-  file:
-    - dist/gometalinter-v2.0.0-darwin-amd64.zip
-    - dist/gometalinter-v2.0.0-darwin-386.zip
-    - dist/gometalinter-v2.0.0-linux-amd64.zip
-    - dist/gometalinter-v2.0.0-darwin-amd64.zip
-    - dist/gometalinter-v2.0.0-windows-386.zip
-    - dist/gometalinter-v2.0.0-linux-386.zip
-    - dist/gometalinter-v2.0.0-windows-amd64.zip
+  file_glob: true
+  file: dist/gometalinter-*.zip
   skip_cleanup: true
   on:
     tags: true
