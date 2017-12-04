@@ -22,6 +22,7 @@ deploy:
     - dist/gometalinter-v2.0.0-windows-386.zip
     - dist/gometalinter-v2.0.0-linux-386.zip
     - dist/gometalinter-v2.0.0-windows-amd64.zip
+  skip_cleanup: true
   on:
     tags: true
     repo: alecthomas/gometalinter
